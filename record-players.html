@@ -1,0 +1,1755 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="robots" content="index, follow">
+		<link rel="canonical" href="http://localhost:1111/index.html">
+		<link rel="alternate" hreflang="en" href="http://localhost:1111/index.html">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preload" href="./assets/fonts/inter-v20-latin-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/inter-v20-latin-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/inter-v20-latin-600.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/inter-v20-latin-500.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/bebas-neue-v16-latin-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css?v=1774872624247">
+		<script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js?v=1774872624247"></script>
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>record-players</title>
+		<script type="module" crossorigin="" src="./js/cartStore.min.js?v=1774872624247"></script>
+		<script type="module" crossorigin="" src="./js/cartCounter.min.js?v=1774872624247"></script>
+		<script type="module" crossorigin="" src="./js/wishlistStore.min.js?v=1774872624247"></script>
+		<script type="module" crossorigin="" src="./js/wishlistCounter.min.js?v=1774872624247"></script>
+		<script type="module" crossorigin="" src="./js/common.min.js?v=1774872624247"></script>
+		<script type="module" crossorigin="" src="./js/stepper.min.js?v=1774872624247"></script>
+		<script type="module" crossorigin="" src="./js/accordeon.min.js?v=1774872624247"></script>
+		<script type="module" crossorigin="" src="./js/loopscroll.min.js?v=1774872624247"></script>
+		<script type="module" crossorigin="" src="./js/article.min.js?v=1774872624247"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/stepper.min.css?v=1774872624247">
+		<link rel="stylesheet" crossorigin="" href="./css/accordeon.min.css?v=1774872624247">
+		<link rel="stylesheet" crossorigin="" href="./css/loopscroll.min.css?v=1774872624247">
+		<link rel="stylesheet" crossorigin="" href="./css/article.min.css?v=1774872624247">
+		<link rel="stylesheet" crossorigin="" href="./css/catalog-main.min.css?v=1774872624247">
+		<link rel="stylesheet" crossorigin="" href="./css/checkbox.min.css?v=1774872624247">
+		<link rel="stylesheet" crossorigin="" href="./css/catalog.min.css?v=1774872624247">
+		<link rel="stylesheet" crossorigin="" href="./css/innerhero.min.css?v=1774872624247">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" class="header">
+				<div class="header__top">
+					<div class="header__container container">
+						<a href="index.html" class="header__link-logo">
+							<img class="header__logo" src="./assets/img/logo.svg" alt="logo">
+						</a>
+						<div data-fls-menu="" class="header__menu menu">
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="/stores.html" class="menu__link">Stores</a>
+									</li>
+									<li class="menu__item">
+										<a href="/contacts.html" class="menu__link">Contacts</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<!--
+<fetch url="@components/layout/menu/menu.json">
+<each loop='item in response'>
+</each>
+</fetch>
+-->
+						<div class="header__phone--mobile"></div>
+						<div data-fls-actions="" class="header__actions">
+							<a href="wishlist.html" aria-label="Go to Favorites" class="--icon-fav header__fav header__action">
+								<span class="header__action-count" data-wishlist-count="">0</span>
+							</a>
+							<button data-fls-minicart="" aria-label="Open cart" class="--icon-cart header__cart header__action">
+								<span data-cart-count="">0</span>
+							</button>
+							<a href="#" aria-label="profile" class="--icon-user header__profile header__action" data-graph-path="enter-modal">profile</a>
+						</div>
+						<div class="graph-modal">
+							<div data-fls-modals="" class="graph-modal__container graph-modal__container--enter" role="dialog" aria-modal="true" data-graph-target="enter-modal">
+								<button class="graph-modal__close js-modal-close --icon-close" aria-label="Close modal window"></button>
+								<div class="graph-modal__content">
+									<div class="enter-modal">
+										<div class="enter-modal__step enter-modal__step--first">
+											<h2 class="enter-modal__title">Login or Sign Up</h2>
+											<form action="#" class="enter-modal__form">
+												<label class="enter-modal__label">
+													<span class="visually-hidden">Phone</span>
+													<input data-fls-input="" type="tel" placeholder="Your phone number" name="phone" class="enter-modal__tel enter-modal__input small-input">
+												</label>
+												<button data-fls-button="" type="submit" class="button button--primary enter-modal__btn">Enter</button>
+											</form>
+										</div>
+										<div class="enter-modal__step enter-modal__step--second">
+											<button class="enter-modal__back --icon-arrow-small-left" aria-label="Back"></button>
+											<h2 class="enter-modal__title">CONFIRMATION</h2>
+											<p class="enter-modal__descr">Enter the code from Telegram or SMS</p>
+											<input data-fls-input="" type="text" placeholder="Enter code" name="code" class="enter-modal__code-input small-input">
+											<small class="enter-modal__text">Request code via SMS: 32 s.</small>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="graph-modal__container graph-modal__container--review" role="dialog" aria-modal="true" data-graph-target="review-modal">
+								<button class="graph-modal__close js-modal-close --icon-close" aria-label="Close modal window"></button>
+								<div class="graph-modal__content">
+									<div class="review-modal">
+										<div class="review-modal__header">
+											<h2 class="review-modal__title">Leave a Review</h2>
+										</div>
+										<form action="#" class="review-modal__form">
+											<div class="review-modal__field">
+												<label for="review-name">
+													<span class="visually-hidden">Your Name</span>
+													<input data-fls-input="" id="review-name" type="text" name="name" placeholder="Your Name" required>
+												</label>
+											</div>
+											<div class="review-modal__field">
+												<label for="review-rating">
+													Rating
+													<span class="required">*</span>
+												</label>
+												<select id="review-rating" name="rating" required>
+													<option value="5">★★★★★</option>
+													<option value="4">★★★★</option>
+													<option value="3">★★★</option>
+													<option value="2">★★</option>
+													<option value="1">★</option>
+												</select>
+											</div>
+											<div class="review-modal__field review-modal__field--message">
+												<label for="review-comment">
+													<span class="visually-hidden">Comment</span>
+													<textarea data-fls-input="" id="review-comment" name="comment" rows="4" placeholder="Comment" required></textarea>
+												</label>
+											</div>
+											<button data-fls-button="" type="submit" class="review-modal__button button button--primary">Submit</button>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div data-fls-modals="" data-fls-popup="" class="graph-modal__container graph-modal__container--message" role="dialog" aria-modal="true" aria-labelledby="popup-title" data-graph-target="message-modal">
+								<button class="graph-modal__close js-modal-close --icon-close" aria-label="Close modal window"></button>
+								<div class="graph-modal__content">
+									<div class="message-modal">
+										<h2 class="message-modal__title">Message send</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header__bottom">
+					<div class="header__container container">
+						<button data-fls-megamenu="" type="button" class="header__btn --icon-burger header__catalog">
+							catalog
+							<span class="header-btn__angle"></span>
+						</button>
+						<button data-fls-collections="" aria-haspopup="dialog" aria-expanded="false" aria-controls="collections-menu" type="button" class="header-btn__collections">
+							collections
+							<span class="header-btn__angle"></span>
+						</button>
+						<form action="#" class="header-search">
+							<label class="header-search__label">
+								<img class="header-search__icon" src="./assets/img/search.svg" alt="icon search" width="20" height="20">
+								<input name="search" type="search" autocomplete="off" placeholder="Find some vinyl or stereo equipment" class="header-search__input">
+							</label>
+							<div data-fls-searchdropdown="" class="search-dropdown" role="listbox" aria-label="Search results">
+								<div class="search-dropdown__inner"></div>
+							</div>
+						</form>
+						<a data-fls-dynamic=".header__phone--mobile, 992" href="tel:88004567890" class="header__phone">8-800-456-78-90</a>
+					</div>
+				</div>
+			</header>
+			<div class="overlay"></div>
+			<link rel="stylesheet" href="components/pages/catalog-record-players/catalog-record-players.scss">
+			<main class="page page--catalog">
+				<section data-fls-innerhero="" class="inner-hero" aria-labelledby="catalog-hero-title">
+					<div class="inner-hero__container">
+						<h1 id="catalog-hero-title" class="inner-hero__title">RECORD PLAYERS</h1>
+					</div>
+				</section>
+				<section class="catalog">
+					<h2 class="visually-hidden">RECORD PLAYERS</h2>
+					<div data-fls-border="" class="catalog__top">
+						<div class="catalog__container">
+							<div class="catalog__inner grid">
+								<div class="catalog__left">
+									<h3 class="catalog__subtitle">Filters</h3>
+								</div>
+								<div data-fls-dynamic=".catalog__filtered-mobile, 1024" class="catalog__filters-bar">
+									<div class="catalog__filtered"></div>
+									<button class="catalog__reset">Reset filter</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="catalog-wrapper">
+					<div class="catalog-wrapper__container">
+						<div class="catalog__inner grid">
+							<div class="catalog__left catalog__left--mobile-fixed" data-simplebar="">
+								<div data-fls-mobilefilter="" class="catalog__mobile-filter-top">
+									<h3 class="catalog__mobile-filter-subtitle">Filters</h3>
+									<button class="catalog__mobile-filter-close --icon-close" aria-label="Close filters"></button>
+								</div>
+								<div data-fls-accordeon="" data-fls-filter="" class="accordeon spollers catalog-filter">
+									<!-- Brands Filter -->
+									<div class="accordeon__item catalog-filter__block">
+										<button class="accordeon__title" aria-expanded="false" aria-controls="brands-panel" id="brands-button">
+											<span class="accordeon__label">Brands</span>
+											<span class="accordeon__icon"></span>
+										</button>
+										<div class="accordeon__text spollers__body catalog-filter__inner">
+											<ul class="catalog-filter__items">
+												<li class="catalog-filter__item">
+													<label data-fls-checkbox="" class="checkbox">
+														<input class="checkbox__input" type="checkbox" name="brands[]" value="Victrola">
+														<span class="checkbox__text">Victrola</span>
+													</label>
+													<label data-fls-checkbox="" class="checkbox">
+														<input class="checkbox__input" type="checkbox" name="brands[]" value="Crosley">
+														<span class="checkbox__text">Crosley</span>
+													</label>
+													<label data-fls-checkbox="" class="checkbox">
+														<input class="checkbox__input" type="checkbox" name="brands[]" value="Electrohome">
+														<span class="checkbox__text">Electrohome</span>
+													</label>
+													<label data-fls-checkbox="" class="checkbox">
+														<input class="checkbox__input" type="checkbox" name="brands[]" value="Trexonic">
+														<span class="checkbox__text">Trexonic</span>
+													</label>
+													<label data-fls-checkbox="" class="checkbox">
+														<input class="checkbox__input" type="checkbox" name="brands[]" value="Lenco">
+														<span class="checkbox__text">Lenco</span>
+													</label>
+													<label data-fls-checkbox="" class="checkbox">
+														<input class="checkbox__input" type="checkbox" name="brands[]" value="ION">
+														<span class="checkbox__text">ION</span>
+													</label>
+													<label data-fls-checkbox="" class="checkbox">
+														<input class="checkbox__input" type="checkbox" name="brands[]" value="Fluance">
+														<span class="checkbox__text">Fluance</span>
+													</label>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<!-- Price Filter -->
+									<div class="accordeon__item catalog-filter__block">
+										<button class="accordeon__title" aria-expanded="false" aria-controls="price-panel" id="price-button">
+											<span class="accordeon__label">Price</span>
+											<span class="accordeon__icon"></span>
+										</button>
+										<div class="accordeon__text spollers__body catalog-filter__inner">
+											<ul class="catalog-filter__items">
+												<li class="catalog-filter__item">
+													<div data-fls-radio="" class="prices">
+														<label class="prices__item">
+															<input class="prices__input" type="radio" name="price" data-min="0" data-max="75">
+															<span class="prices__text">$0 - $75</span>
+														</label>
+														<label class="prices__item">
+															<input class="prices__input" type="radio" name="price" data-min="75" data-max="150">
+															<span class="prices__text">$75 - $150</span>
+														</label>
+														<label class="prices__item">
+															<input class="prices__input" type="radio" name="price" data-min="150" data-max="250">
+															<span class="prices__text">$150 - $250</span>
+														</label>
+														<label class="prices__item">
+															<input class="prices__input" type="radio" name="price" data-min="250" data-max="400">
+															<span class="prices__text">$250 - $400</span>
+														</label>
+													</div>
+												</li>
+												<div class="catalog-filter__price">
+													<div class="catalog-filter__price-inputs">
+														<input name="price" type="number" min="0" max="400" step="5" placeholder="0" class="small-input catalog-filter__price-input catalog-filter__price-input--min">
+														<span class="catalog-filter__price-divider">-</span>
+														<input name="price" type="number" min="0" max="400" step="5" placeholder="400" class="small-input catalog-filter__price-input catalog-filter__price-input--max">
+													</div>
+													<div class="catalog-filter__price-range">
+														<div data-fls-pricerange="" id="pricerange" class="pricerange"></div>
+													</div>
+												</div>
+											</ul>
+										</div>
+									</div>
+									<!-- Features Filter -->
+									<div class="accordeon__item catalog-filter__block">
+										<button class="accordeon__title" aria-expanded="false" aria-controls="features-panel" id="features-button">
+											<span class="accordeon__label">Features</span>
+											<span class="accordeon__icon"></span>
+										</button>
+										<div class="accordeon__text spollers__body catalog-filter__inner">
+											<ul class="catalog-filter__items">
+												<li class="catalog-filter__item">
+													<label data-fls-checkbox="" class="checkbox">
+														<input class="checkbox__input" type="checkbox" name="features[]" value="Built In Speaker">
+														<span class="checkbox__text">Built-In Speaker</span>
+													</label>
+													<label data-fls-checkbox="" class="checkbox">
+														<input class="checkbox__input" type="checkbox" name="features[]" value="Built-In Bluetooth Receiver">
+														<span class="checkbox__text">Bluetooth</span>
+													</label>
+													<label data-fls-checkbox="" class="checkbox">
+														<input class="checkbox__input" type="checkbox" name="features[]" value="Portable">
+														<span class="checkbox__text">Portable</span>
+													</label>
+													<label data-fls-checkbox="" class="checkbox">
+														<input class="checkbox__input" type="checkbox" name="features[]" value="Built In Preamp">
+														<span class="checkbox__text">Built-In Preamp</span>
+													</label>
+													<label data-fls-checkbox="" class="checkbox">
+														<input class="checkbox__input" type="checkbox" name="features[]" value="Auto Return">
+														<span class="checkbox__text">Auto Return</span>
+													</label>
+													<label data-fls-checkbox="" class="checkbox">
+														<input class="checkbox__input" type="checkbox" name="features[]" value="Automatic Belt Drive Design">
+														<span class="checkbox__text">Automatic Belt Drive</span>
+													</label>
+													<label data-fls-checkbox="" class="checkbox">
+														<input class="checkbox__input" type="checkbox" name="features[]" value="Adjustable Tone Control">
+														<span class="checkbox__text">Adjustable Tone Control</span>
+													</label>
+													<label data-fls-checkbox="" class="checkbox">
+														<input class="checkbox__input" type="checkbox" name="features[]" value="Adjustable Speed">
+														<span class="checkbox__text">Adjustable Speed</span>
+													</label>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<!-- Material Filter -->
+									<div class="accordeon__item catalog-filter__block">
+										<button class="accordeon__title" aria-expanded="false" aria-controls="material-panel" id="material-button">
+											<span class="accordeon__label">Material</span>
+											<span class="accordeon__icon"></span>
+										</button>
+										<div class="accordeon__text spollers__body catalog-filter__inner">
+											<ul class="catalog-filter__items">
+												<li class="catalog-filter__item">
+													<label data-fls-checkbox="" class="checkbox">
+														<input class="checkbox__input" type="checkbox" name="material[]" value="Engineered Wood">
+														<span class="checkbox__text">Engineered Wood</span>
+													</label>
+													<label data-fls-checkbox="" class="checkbox">
+														<input class="checkbox__input" type="checkbox" name="material[]" value="Wood">
+														<span class="checkbox__text">Wood</span>
+													</label>
+													<label data-fls-checkbox="" class="checkbox">
+														<input class="checkbox__input" type="checkbox" name="material[]" value="Plastic">
+														<span class="checkbox__text">Plastic</span>
+													</label>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="catalog__right">
+								<div class="catalog__mobile-top">
+									<h3 class="catalog__subtitle catalog__mobile-title">
+										Filters
+										<span class="catalog__mobile-count">3</span>
+									</h3>
+									<button class="catalog__mobile-open-filters" aria-label="Open the filters"></button>
+								</div>
+								<div class="catalog__filtered-mobile"></div>
+								<div class="catalog__meta">
+									<div class="catalog__shows">Showing 20 products</div>
+									<div class="custom-select catalog__select">
+										<button data-fls-customselect="" class="custom-select__btn btn --icon-sort">Popular first</button>
+										<div class="custom-select__dropdown" role="listbox" aria-label="Sort products">
+											<ul class="custom-select__list">
+												<li class="custom-select__item">
+													<button data-sort="popularity" class="custom-select__choose custom-select__choose--active" role="option" aria-selected="true">Popular first</button>
+												</li>
+												<li class="custom-select__item">
+													<button data-sort="price-asc" class="custom-select__choose" role="option">Cheapest first</button>
+												</li>
+												<li class="custom-select__item">
+													<button data-sort="price-desc" class="custom-select__choose" role="option">Most expensive first</button>
+												</li>
+												<li class="custom-select__item">
+													<button data-sort="rating" class="custom-select__choose" role="option">Highest rated first</button>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<ul class="catalog__list catalog__products">
+									<li class="catalog__products-item" data-price="44.78" data-rating="4.4" data-popularity="98" data-brand="Victrola" data-directionality="undefined" data-connector="undefined" data-form-factor="undefined" data-features="Built In Speaker,Built-In Bluetooth Receiver,Portable,Adjustable Speed" data-material="Engineered Wood" data-category="record-players" data-genre="undefined" data-format="undefined" data-collections="[&quot;budget&quot;,&quot;portable&quot;,&quot;record-players&quot;]" data-subcategory="undefined">
+										<article data-fls-article="" class="product" data-product-id="084" data-product-title="Victrola Vintage 3-Speed Bluetooth" data-product-price="44.78" data-product-image="assets/img/products/record players/victrola/victrola-suitcase.jpg">
+											<div class="product__top">
+												<img src="./assets/img/products/record%20players/victrola/victrola-suitcase.jpg" alt="Victrola Vintage 3-Speed Bluetooth" width="320" height="320" loading="lazy" class="product__image">
+												<div class="product__badges">
+													<div class="product__percent">Sale</div>
+												</div>
+												<button aria-label="add to favorite" type="button" class="--icon-fav button__fav product__fav" data-wishlist-btn=""></button>
+											</div>
+											<div class="product__bottom">
+												<p class="product__brand">Victrola</p>
+												<h3 class="product__title">
+													<a href="/victrola-suitcase-record-player.html" class="product__link">Victrola Vintage 3-Speed Bluetooth</a>
+												</h3>
+												<div class="product__rating-stars">★ 4.4</div>
+												<div class="product__prices">
+													<div class="product__price-current">44.78 $</div>
+													<div class="product__price-old">49.26 $</div>
+												</div>
+												<button type="button" class="button button--primary product__btn" data-addtocart="">Add to cart</button>
+											</div>
+										</article>
+									</li>
+									<li class="catalog__products-item" data-price="69.99" data-rating="4" data-popularity="89" data-brand="Crosley" data-directionality="undefined" data-connector="undefined" data-form-factor="undefined" data-features="Built In Speaker,Portable,Built-In Bluetooth Receiver,Adjustable Speed" data-material="Plastic" data-category="record-players" data-genre="undefined" data-format="undefined" data-collections="[&quot;budget&quot;,&quot;portable&quot;,&quot;record-players&quot;]" data-subcategory="undefined">
+										<article data-fls-article="" class="product" data-product-id="085" data-product-title="Crosley Cruiser Plus" data-product-price="69.99" data-product-image="assets/img/products/record players/crosley/Crosley Cruiser.jpg">
+											<div class="product__top">
+												<img src="./assets/img/products/record%20players/crosley/Crosley%20Cruiser.jpg" alt="Crosley Cruiser Plus" width="320" height="320" loading="lazy" class="product__image">
+												<button aria-label="add to favorite" type="button" class="--icon-fav button__fav product__fav" data-wishlist-btn=""></button>
+											</div>
+											<div class="product__bottom">
+												<p class="product__brand">Crosley</p>
+												<h3 class="product__title">
+													<a href="/crosley-cruiser-plus.html" class="product__link">Crosley Cruiser Plus</a>
+												</h3>
+												<div class="product__rating-stars">★ 4</div>
+												<div class="product__prices">
+													<div class="product__price-current">69.99 $</div>
+												</div>
+												<button type="button" class="button button--primary product__btn" data-addtocart="">Add to cart</button>
+											</div>
+										</article>
+									</li>
+									<li class="catalog__products-item" data-price="89.99" data-rating="4.3" data-popularity="71" data-brand="Electrohome" data-directionality="undefined" data-connector="undefined" data-form-factor="undefined" data-features="Built In Speaker,Built-In Bluetooth Receiver,Adjustable Tone Control,Adjustable Speed" data-material="Engineered Wood" data-category="record-players" data-genre="undefined" data-format="undefined" data-collections="[&quot;budget&quot;,&quot;record-players&quot;]" data-subcategory="undefined">
+										<article data-fls-article="" class="product" data-product-id="086" data-product-title="Electrohome Vinyl with FM Radio" data-product-price="89.99" data-product-image="assets/img/products/record players/electrohome/Record Player with FM Radio.jpg">
+											<div class="product__top">
+												<img src="./assets/img/products/record%20players/electrohome/Record%20Player%20with%20FM%20Radio.jpg" alt="Electrohome Vinyl with FM Radio" width="320" height="320" loading="lazy" class="product__image">
+												<div class="product__badges">
+													<div class="product__percent">Sale</div>
+												</div>
+												<button aria-label="add to favorite" type="button" class="--icon-fav button__fav product__fav" data-wishlist-btn=""></button>
+											</div>
+											<div class="product__bottom">
+												<p class="product__brand">Electrohome</p>
+												<h3 class="product__title">
+													<a href="/electrohome-vinyl-fm.html" class="product__link">Electrohome Vinyl with FM Radio</a>
+												</h3>
+												<div class="product__rating-stars">★ 4.3</div>
+												<div class="product__prices">
+													<div class="product__price-current">89.99 $</div>
+													<div class="product__price-old">109.99 $</div>
+												</div>
+												<button type="button" class="button button--primary product__btn" data-addtocart="">Add to cart</button>
+											</div>
+										</article>
+									</li>
+									<li class="catalog__products-item" data-price="59.99" data-rating="3.8" data-popularity="44" data-brand="Trexonic" data-directionality="undefined" data-connector="undefined" data-form-factor="undefined" data-features="Built In Speaker,Portable,Adjustable Speed" data-material="Plastic" data-category="record-players" data-genre="undefined" data-format="undefined" data-collections="[&quot;budget&quot;,&quot;portable&quot;,&quot;record-players&quot;]" data-subcategory="undefined">
+										<article data-fls-article="" class="product" data-product-id="087" data-product-title="Trexonic Retro Wireless" data-product-price="59.99" data-product-image="assets/img/products/turntable/trexonic/trex-1.jpg">
+											<div class="product__top">
+												<picture>
+													<source media="(max-width: 200px)" srcset="./assets/img/products/turntable/trexonic/trex-1-200.webp" type="image/webp">
+													<source srcset="./assets/img/products/turntable/trexonic/trex-1.webp" type="image/webp">
+													<img alt="Trexonic Retro Wireless" width="320" height="320" loading="lazy" class="product__image" src="./assets/img/products/turntable/trexonic/trex-1.webp">
+												</picture>
+												<button aria-label="add to favorite" type="button" class="--icon-fav button__fav product__fav" data-wishlist-btn=""></button>
+											</div>
+											<div class="product__bottom">
+												<p class="product__brand">Trexonic</p>
+												<h3 class="product__title">
+													<a href="/trexonic-retro.html" class="product__link">Trexonic Retro Wireless</a>
+												</h3>
+												<div class="product__rating-stars">★ 3.8</div>
+												<div class="product__prices">
+													<div class="product__price-current">59.99 $</div>
+												</div>
+												<button type="button" class="button button--primary product__btn" data-addtocart="">Add to cart</button>
+											</div>
+										</article>
+									</li>
+									<li class="catalog__products-item" data-price="59.99" data-rating="4.4" data-popularity="63" data-brand="Lenco" data-directionality="undefined" data-connector="undefined" data-form-factor="undefined" data-features="Built In Speaker,Built-In Bluetooth Receiver,Adjustable Speed" data-material="Plastic" data-category="record-players" data-genre="undefined" data-format="undefined" data-collections="[&quot;budget&quot;,&quot;record-players&quot;]" data-subcategory="undefined">
+										<article data-fls-article="" class="product" data-product-id="088" data-product-title="Lenco LS-50LED" data-product-price="59.99" data-product-image="assets/img/products/record players/lenco/LS-50LED.jpg">
+											<div class="product__top">
+												<img src="./assets/img/products/record%20players/lenco/LS-50LED.jpg" alt="Lenco LS-50LED" width="320" height="320" loading="lazy" class="product__image">
+												<div class="product__badges">
+													<div class="product__percent">Sale</div>
+												</div>
+												<button aria-label="add to favorite" type="button" class="--icon-fav button__fav product__fav" data-wishlist-btn=""></button>
+											</div>
+											<div class="product__bottom">
+												<p class="product__brand">Lenco</p>
+												<h3 class="product__title">
+													<a href="/lenco-ls50led.html" class="product__link">Lenco LS-50LED</a>
+												</h3>
+												<div class="product__rating-stars">★ 4.4</div>
+												<div class="product__prices">
+													<div class="product__price-current">59.99 $</div>
+													<div class="product__price-old">79.99 $</div>
+												</div>
+												<button type="button" class="button button--primary product__btn" data-addtocart="">Add to cart</button>
+											</div>
+										</article>
+									</li>
+									<li class="catalog__products-item" data-price="199.99" data-rating="4.6" data-popularity="66" data-brand="Electrohome" data-directionality="undefined" data-connector="undefined" data-form-factor="undefined" data-features="Built In Speaker,Built-In Bluetooth Receiver,Adjustable Tone Control,Adjustable Speed,Built In Preamp" data-material="Wood" data-category="record-players" data-genre="undefined" data-format="undefined" data-collections="[&quot;record-players&quot;]" data-subcategory="undefined">
+										<article data-fls-article="" class="product" data-product-id="089" data-product-title="Electrohome Signature Vinyl" data-product-price="199.99" data-product-image="assets/img/products/record players/electrohome/electrohome-signature.webp">
+											<div class="product__top">
+												<img src="./assets/img/products/record%20players/electrohome/electrohome-signature.webp" alt="Electrohome Signature Vinyl" width="320" height="320" loading="lazy" class="product__image">
+												<div class="product__badges">
+													<div class="product__badge product__badge--new">New</div>
+												</div>
+												<button aria-label="add to favorite" type="button" class="--icon-fav button__fav product__fav" data-wishlist-btn=""></button>
+											</div>
+											<div class="product__bottom">
+												<p class="product__brand">Electrohome</p>
+												<h3 class="product__title">
+													<a href="/electrohome-signature.html" class="product__link">Electrohome Signature Vinyl</a>
+												</h3>
+												<div class="product__rating-stars">★ 4.6</div>
+												<div class="product__prices">
+													<div class="product__price-current">199.99 $</div>
+												</div>
+												<button type="button" class="button button--primary product__btn" data-addtocart="">Add to cart</button>
+											</div>
+										</article>
+									</li>
+									<li class="catalog__products-item" data-price="99.99" data-rating="4.1" data-popularity="82" data-brand="Victrola" data-directionality="undefined" data-connector="undefined" data-form-factor="undefined" data-features="Portable,Built In Speaker,Built-In Bluetooth Receiver,Adjustable Speed" data-material="Plastic" data-category="record-players" data-genre="undefined" data-format="undefined" data-collections="[&quot;portable&quot;,&quot;record-players&quot;]" data-subcategory="undefined">
+										<article data-fls-article="" class="product" data-product-id="090" data-product-title="Victrola Revolution GO" data-product-price="99.99" data-product-image="assets/img/products/record players/victrola/victrola-revolution.jpg">
+											<div class="product__top">
+												<img src="./assets/img/products/record%20players/victrola/victrola-revolution.jpg" alt="Victrola Revolution GO" width="320" height="320" loading="lazy" class="product__image">
+												<div class="product__badges">
+													<div class="product__percent">Sale</div>
+												</div>
+												<button aria-label="add to favorite" type="button" class="--icon-fav button__fav product__fav" data-wishlist-btn=""></button>
+											</div>
+											<div class="product__bottom">
+												<p class="product__brand">Victrola</p>
+												<h3 class="product__title">
+													<a href="/victrola-revolution-go.html" class="product__link">Victrola Revolution GO</a>
+												</h3>
+												<div class="product__rating-stars">★ 4.1</div>
+												<div class="product__prices">
+													<div class="product__price-current">99.99 $</div>
+													<div class="product__price-old">119.99 $</div>
+												</div>
+												<button type="button" class="button button--primary product__btn" data-addtocart="">Add to cart</button>
+											</div>
+										</article>
+									</li>
+								</ul>
+								<ul data-fls-pagination="" class="pagination catalog__pagination">
+									<li class="pagination__item">
+										<button class="pagination__btn pagination__prev">Prev</button>
+									</li>
+									<li class="pagination__item">
+										<button class="pagination__btn pagination__btn--active">1</button>
+									</li>
+									<li class="pagination__item">
+										<button class="pagination__btn">2</button>
+									</li>
+									<li class="pagination__item">
+										<button class="pagination__btn">3</button>
+									</li>
+									<li class="pagination__item">
+										<button class="pagination__btn">4</button>
+									</li>
+									<li class="pagination__item">
+										<button class="pagination__btn">5</button>
+									</li>
+									<li class="pagination__item">
+										<button class="pagination__btn pagination__next">Next</button>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+				<nav data-fls-mobilemenu="" class="mobile-menu">
+					<ul class="mobile-menu__list">
+						<li class="mobile-menu__item">
+							<a href="index.html" class="mobile-menu__link --icon-home mobile-menu__home">
+								<span class="mobile-menu__text">Home</span>
+							</a>
+						</li>
+						<li class="mobile-menu__item">
+							<a href="stores.html" class="mobile-menu__link --icon-location mobile-menu__stores">
+								<span class="mobile-menu__text">Stores</span>
+							</a>
+						</li>
+						<li class="mobile-menu__item">
+							<button data-fls-megamenu="" type="button" aria-label="Open catalog" class="mobile-menu__link --icon-catalog mobile-menu__catalog">
+								<span class="mobile-menu__text">Catalog</span>
+							</button>
+						</li>
+						<li class="mobile-menu__item">
+							<button data-fls-collections="" type="button" aria-label="Open collections" class="mobile-menu__link --icon-collections mobile-menu__collections">
+								<span class="mobile-menu__text">Collections</span>
+							</button>
+						</li>
+						<li class="mobile-menu__item mobile-menu__item--cart">
+							<button aria-label="Open cart" class="mobile-menu__link --icon-cart mobile-menu__cart">
+								<div class="mobile-menu__cart-inner">
+									<span class="mobile-menu__text">Cart</span>
+									<span class="mobile-menu__cart-count" data-cart-count="">0</span>
+								</div>
+							</button>
+						</li>
+						<li class="mobile-menu__item">
+							<button class="mobile-menu__link --icon-user mobile-menu__user" aria-label="User account" data-graph-path="enter-modal">
+								<span class="mobile-menu__text">User</span>
+							</button>
+						</li>
+					</ul>
+				</nav>
+				<aside data-fls-loopscroll="" class="loop-scroll">
+					<ul data-fls-marquee="" data-fls-marquee-speed="150" class="loop-scroll__inner">
+						<li class="loop-scroll__item">Restoration</li>
+						<li class="loop-scroll__item">•</li>
+						<li class="loop-scroll__item">Worldwide shipping</li>
+						<li class="loop-scroll__item">•</li>
+						<li class="loop-scroll__item">Vinyl</li>
+						<li class="loop-scroll__item">•</li>
+						<li class="loop-scroll__item">Equipment</li>
+						<li class="loop-scroll__item">•</li>
+					</ul>
+				</aside>
+			</main>
+			<footer data-fls-footer="" class="footer">
+				<div data-fls-cookie="" class="cookie-block">
+					<h3 class="cookie-block__title">We use cookies to improve site performance</h3>
+					<p class="cookie-block__descr">By staying on the site, you agree to the use of cookies</p>
+					<button class="button button--tertiary cookie-block__button">Ok</button>
+				</div>
+				<div class="footer__container">
+					<div class="footer__top top-footer grid">
+						<div class="footer__col">
+							<a href="#" class="content-footer__link-logo">
+								<img class="content-footer__logo" src="./assets/img/logo-footer.svg" alt="Logo">
+							</a>
+						</div>
+						<div class="footer__col" data-spoller="576">
+							<button class="footer__caption --icon-angle-down" aria-expanded="false">CATALOG</button>
+							<div class="footer__body" hidden>
+								<ul class="top-footer__list">
+									<li>
+										<a href="vinyl.html" class="top-footer__link">Vinyl</a>
+									</li>
+									<li>
+										<a href="cassettes.html" class="top-footer__link">Cassettes</a>
+									</li>
+									<li>
+										<a href="accessories.html" class="top-footer__link">Equipment</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="footer__col" data-spoller="576">
+							<button class="footer__caption --icon-angle-down" aria-expanded="false">FOR CLIENTS</button>
+							<div class="footer__body" hidden>
+								<ul class="top-footer__list">
+									<li>
+										<a href="delivery.html" class="top-footer__link">Delivery</a>
+									</li>
+									<li>
+										<a href="returns.html" class="top-footer__link">Returns</a>
+									</li>
+									<li>
+										<a href="faq.html" class="top-footer__link">Finance FAQs</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="footer__col" data-spoller="576">
+							<button class="footer__caption --icon-angle-down" aria-expanded="false">CONTACTS</button>
+							<div class="footer__body" hidden>
+								<ul class="top-footer__list">
+									<li>
+										<a href="mailto:support@reeltoreal.store" class="top-footer__link">Email: support@reeltoreal.store</a>
+									</li>
+									<li>
+										<a href="tel:+442012345678" class="top-footer__link">Phone: +44 20 1234 5678</a>
+									</li>
+									<li>
+										<a href="#" class="top-footer__link">Address: 12 Camden High St, London NW1 0JH, UK</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="footer__bottom bottom-footer">
+						<div class="bottom-footer__copy">© 2026 Reel to Real. All rights reserved.</div>
+						<a href="policy.html" class="bottom-footer__additional">Privacy Policy</a>
+						<a href="term.html" class="bottom-footer__additional">Terms of Use</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<a href="#header" data-fls-totop="" class="to-top button-footer__up --icon-arrow-to-top"></a>
+		<div data-fls-minicart="" class="mini-cart">
+			<div class="mini-cart__top">
+				<h2 class="mini-cart__title">
+					Cart
+					<span class="mini-cart__quantity">0</span>
+				</h2>
+				<button class="mini-cart__close --icon-close" aria-label="Close mini-cart"></button>
+			</div>
+			<div class="mini-cart__content">
+				<div data-fls-minicartproduct="" class="mini-cart__products"></div>
+				<div class="mini-cart__bottom">
+					<div class="mini-cart__result">
+						<div class="mini-cart__text">Total</div>
+						<div class="mini-cart__summ">0 $</div>
+					</div>
+					<a href="cart.html" class="button button--primary mini-cart__goto-cart mini-cart-product__btn">View cart</a>
+				</div>
+			</div>
+		</div>
+		<div data-fls-megamenu="" class="megamenu catalog-menu">
+			<nav data-simplebar="" class="megamenu__nav" title="megamenu">
+				<ul class="megamenu__list">
+					<li class="megamenu__item">
+						<button class="megamenu__btn megamenu__btn--active --icon-angle-down">Turntable</button>
+					</li>
+					<li class="megamenu__item">
+						<button class="megamenu__btn --icon-angle-down">Microphone</button>
+					</li>
+					<li class="megamenu__item">
+						<button class="megamenu__btn --icon-angle-down">Speaker system</button>
+					</li>
+					<li class="megamenu__item">
+						<button class="megamenu__btn --icon-angle-down">Vinyl records</button>
+					</li>
+					<li class="megamenu__item">
+						<button class="megamenu__btn --icon-angle-down">Portable Hi-FI</button>
+					</li>
+					<li class="megamenu__item">
+						<button class="megamenu__btn --icon-angle-down">Studio equipment</button>
+					</li>
+					<li class="megamenu__item">
+						<button class="megamenu__btn --icon-angle-down">Headphones</button>
+					</li>
+					<li class="megamenu__item">
+						<button class="megamenu__btn --icon-angle-down">Amplifiers</button>
+					</li>
+					<li class="megamenu__item">
+						<button class="megamenu__btn --icon-angle-down">External DACs</button>
+					</li>
+					<li class="megamenu__item">
+						<button class="megamenu__btn --icon-angle-down">Soundbars</button>
+					</li>
+				</ul>
+			</nav>
+			<div class="megamenu__content">
+				<div class="megamenu__content-header">
+					<button class="megamenu__back --icon-angle-down" aria-label="Back to categories">
+						<span class="megamenu__content-title"></span>
+					</button>
+				</div>
+				<div data-simplebar="" class="megamenu__wrapper">
+					<ul class="megamenu__items">
+						<li class="megamenu__block">
+							<a href="turntable.html" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/collections/turn-200.webp" type="image/webp">
+										<source media="(max-width: 400px)" srcset="./assets/img/collections/turn-400.webp" type="image/webp">
+										<source media="(max-width: 600px)" srcset="./assets/img/collections/turn-600.webp" type="image/webp">
+										<source media="(max-width: 800px)" srcset="./assets/img/collections/turn-800.webp" type="image/webp">
+										<source media="(max-width: 1000px)" srcset="./assets/img/collections/turn-1000.webp" type="image/webp">
+										<source srcset="./assets/img/collections/turn.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Turntables" height="64" loading="lazy" aria-hidden="true" src="./assets/img/collections/turn.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Turntables</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="catalog-main.html" class="megamenu__link" data-subcategory="cartridges">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/cartridges/cartridge-1-200.webp" type="image/webp">
+										<source media="(max-width: 400px)" srcset="./assets/img/megamenu/cartridges/cartridge-1-400.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/cartridges/cartridge-1.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Cartridges" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/cartridges/cartridge-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Cartridges</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="catalog-main.html" class="megamenu__link" data-subcategory="preamps">
+								<picture>
+									<img class="megamenu__icon" src="./assets/img/megamenu/pre%20amp/preamp-1.png" alt="Phono Preamps" height="72" loading="lazy" aria-hidden="true">
+								</picture>
+								<h3 class="megamenu__subtitle">Phono Preamps</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="catalog-main.html" class="megamenu__link" data-subcategory="mat">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/mats/mat-1-200.webp" type="image/webp">
+										<source media="(max-width: 400px)" srcset="./assets/img/megamenu/mats/mat-1-400.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/mats/mat-1.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Turntable Mats" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/mats/mat-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Turntable Mats</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="catalog-main.html" class="megamenu__link" data-subcategory="stylus">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/stylus/stylus-1-200.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/stylus/stylus-1.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Turntable Stylus" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/stylus/stylus-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Turntable Stylus</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="catalog-main.html" class="megamenu__link" data-category="accessories">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/accessories/accessories-1-200.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/accessories/accessories-1.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Turntable Accessories" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/accessories/accessories-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Accessories</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="catalog.html" class="megamenu__link" data-subcategory="dynamic">
+								<picture>
+									<picture>
+										<source srcset="./assets/img/megamenu/mic-1.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Dynamic Microphones" height="64" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/mic-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Dynamic Microphones</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="catalog-main.html" class="megamenu__link" data-subcategory="condenser">
+								<picture>
+									<picture>
+										<source srcset="./assets/img/megamenu/mic-2.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Condenser Microphones" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/mic-2.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Condenser Microphones</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="catalog-main.html" class="megamenu__link" data-category="microphones" data-subcategory="wireless">
+								<picture>
+									<picture>
+										<source srcset="./assets/img/megamenu/mic-3.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Wireless Systems" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/mic-3.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Wireless Systems</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source srcset="./assets/img/megamenu/mic-4.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Conference Systems" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/mic-4.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Conference Systems</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source srcset="./assets/img/megamenu/mic-5.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Lapel Microphones" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/mic-5.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Lapel Microphones</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source srcset="./assets/img/megamenu/mic-6.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Mic Accessories" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/mic-6.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Accessories</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/speaker-system/passive/passive-1-200.webp" type="image/webp">
+										<source media="(max-width: 400px)" srcset="./assets/img/megamenu/speaker-system/passive/passive-1-400.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/speaker-system/passive/passive-1.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Passive Speakers" height="64" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/speaker-system/passive/passive-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Passive Speakers</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/speaker-system/active/speaker-1-200.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/speaker-system/active/speaker-1.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Active Speakers" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/speaker-system/active/speaker-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Active Speakers</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/speaker-system/studio-monitors/studio-1-200.webp" type="image/webp">
+										<source media="(max-width: 400px)" srcset="./assets/img/megamenu/speaker-system/studio-monitors/studio-1-400.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/speaker-system/studio-monitors/studio-1.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Studio Monitors" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/speaker-system/studio-monitors/studio-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Studio Monitors</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/speaker-system/subwoofer/subwoofer-1-200.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/speaker-system/subwoofer/subwoofer-1.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Subwoofers" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/speaker-system/subwoofer/subwoofer-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Subwoofers</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/speaker-system/bookshelf-speaker/bookshelf-1-200.webp" type="image/webp">
+										<source media="(max-width: 400px)" srcset="./assets/img/megamenu/speaker-system/bookshelf-speaker/bookshelf-1-400.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/speaker-system/bookshelf-speaker/bookshelf-1.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Bookshelf Speakers" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/speaker-system/bookshelf-speaker/bookshelf-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Bookshelf Speakers</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/speaker-system/cable/cable-1-200.webp" type="image/webp">
+										<source media="(max-width: 400px)" srcset="./assets/img/megamenu/speaker-system/cable/cable-1-400.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/speaker-system/cable/cable-1.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Speaker Cables" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/speaker-system/cable/cable-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Cables & Accessories</h3>
+							</a>
+						</li>
+						<li class="megamenu__block megamenu__block--records">
+							<a href="catalog-main.html" class="megamenu__link" data-subcategory="Classical">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/vinyl/classsic/classic-1-200.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/vinyl/classsic/classic-1.webp" type="image/webp">
+										<img class="megamenu__icon--records" alt="Classic Vinyl" height="100" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/vinyl/classsic/classic-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Classic Vinyl</h3>
+							</a>
+						</li>
+						<li class="megamenu__block megamenu__block--records">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/vinyl/rock/rock-1-200.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/vinyl/rock/rock-1.webp" type="image/webp">
+										<img class="megamenu__icon--records" alt="Rock Albums" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/vinyl/rock/rock-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Rock Albums</h3>
+							</a>
+						</li>
+						<li class="megamenu__block megamenu__block--records">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/vinyl/jazz/jazz-1-200.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/vinyl/jazz/jazz-1.webp" type="image/webp">
+										<img class="megamenu__icon--records" alt="Jazz Records" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/vinyl/jazz/jazz-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Jazz Records</h3>
+							</a>
+						</li>
+						<li class="megamenu__block megamenu__block--records">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/vinyl/electronic/electronic-1-200.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/vinyl/electronic/electronic-1.webp" type="image/webp">
+										<img class="megamenu__icon--records" alt="Electronic & EDM" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/vinyl/electronic/electronic-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Electronic & EDM</h3>
+							</a>
+						</li>
+						<li class="megamenu__block megamenu__block--records">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/vinyl/hip-hop/hip-hop-1-200.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/vinyl/hip-hop/hip-hop-1.webp" type="image/webp">
+										<img class="megamenu__icon--records" alt="Hip Hop & Rap" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/vinyl/hip-hop/hip-hop-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Hip Hop & Rap</h3>
+							</a>
+						</li>
+						<li class="megamenu__block megamenu__block--records">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/vinyl/soundtrack/soundtrack-1-200.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/vinyl/soundtrack/soundtrack-1.webp" type="image/webp">
+										<img class="megamenu__icon--records" alt="Soundtrack" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/vinyl/soundtrack/soundtrack-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Soundtrack</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/Portable-hi-fi/speaker/speaker-1-200.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/Portable-hi-fi/speaker/speaker-1.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Portable Speakers" height="64" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/Portable-hi-fi/speaker/speaker-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Portable Speakers</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/Portable-hi-fi/daps/dap-1-200.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/Portable-hi-fi/daps/dap-1.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Portable DAPs" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/Portable-hi-fi/daps/dap-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Portable DAPs</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/Portable-hi-fi/earbuds/Earbuds-1-200.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/Portable-hi-fi/earbuds/Earbuds-1.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Wireless Earbuds" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/Portable-hi-fi/earbuds/Earbuds-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Wireless Earbuds</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/Portable-hi-fi/Amps/amp-1-200.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/Portable-hi-fi/Amps/amp-1.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Portable Amps" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/Portable-hi-fi/Amps/amp-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Portable Amps</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/Portable-hi-fi/bt-adapter/adapter-1-200.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/Portable-hi-fi/bt-adapter/adapter-1.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Bluetooth Adapters" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/Portable-hi-fi/bt-adapter/adapter-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Bluetooth Adapters</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/Portable-hi-fi/accessories/accessories-1-200.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/Portable-hi-fi/accessories/accessories-1.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Portable Accessories" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/Portable-hi-fi/accessories/accessories-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Accessories</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/studio-equipment/audio-interfaces/audio-1-200.webp" type="image/webp">
+										<source media="(max-width: 400px)" srcset="./assets/img/megamenu/studio-equipment/audio-interfaces/audio-1-400.webp" type="image/webp">
+										<source media="(max-width: 600px)" srcset="./assets/img/megamenu/studio-equipment/audio-interfaces/audio-1-600.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/studio-equipment/audio-interfaces/audio-1.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Audio Interfaces" height="64" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/studio-equipment/audio-interfaces/audio-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Audio Interfaces</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/studio-equipment/microphones/mic-1-200.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/studio-equipment/microphones/mic-1.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Studio Microphones" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/studio-equipment/microphones/mic-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Studio Microphones</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/studio-equipment/stands/stand-1-200.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/studio-equipment/stands/stand-1.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Mic Stands & Booms" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/studio-equipment/stands/stand-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Mic Stands & Booms</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/studio-equipment/consoles/console-1-200.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/studio-equipment/consoles/console-1.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Mixing Consoles" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/studio-equipment/consoles/console-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Mixing Consoles</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source srcset="./assets/img/megamenu/studio-equipment/stands/stand-2.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Monitoring Stands" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/studio-equipment/stands/stand-2.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Monitoring Stands</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/studio-equipment/cables/cable-1-200.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/studio-equipment/cables/cable-1.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Studio Cables" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/studio-equipment/cables/cable-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Cables & Patch Bays</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/headphones/over-ear/headphone-1-200.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/headphones/over-ear/headphone-1.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Over-Ear Headphones" height="64" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/headphones/over-ear/headphone-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Over-Ear Headphones</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/headphones/one-ear/headphone-1-200.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/headphones/one-ear/headphone-1.webp" type="image/webp">
+										<img class="megamenu__icon" alt="On-Ear Headphones" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/headphones/one-ear/headphone-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">On-Ear Headphones</h3>
+								<div class="megamenu__quantity">19</div>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/headphones/in-ear/headphone-1-200.webp" type="image/webp">
+										<source media="(max-width: 400px)" srcset="./assets/img/megamenu/headphones/in-ear/headphone-1-400.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/headphones/in-ear/headphone-1.webp" type="image/webp">
+										<img class="megamenu__icon" alt="In-Ear Monitors" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/headphones/in-ear/headphone-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">In-Ear Monitors</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/headphones/gaming/headphone-1-200.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/headphones/gaming/headphone-1.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Gaming Headsets" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/headphones/gaming/headphone-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Gaming Headsets</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/headphones/dj/dj-1-200.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/headphones/dj/dj-1.webp" type="image/webp">
+										<img class="megamenu__icon" alt="DJ Headphones" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/headphones/dj/dj-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">DJ Headphones</h3>
+								<div class="megamenu__quantity">16</div>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source srcset="./assets/img/megamenu/headphones/accessories/accessories-1.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Headphone Accessories" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/headphones/accessories/accessories-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Accessories</h3>
+								<div class="megamenu__quantity">31</div>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/amplifiers/integrated/int-1-200.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/amplifiers/integrated/int-1.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Integrated Amplifiers" height="64" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/amplifiers/integrated/int-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Integrated Amplifiers</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/amplifiers/power/pow-1-200.webp" type="image/webp">
+										<source media="(max-width: 400px)" srcset="./assets/img/megamenu/amplifiers/power/pow-1-400.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/amplifiers/power/pow-1.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Power Amplifiers" height="auto" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/amplifiers/power/pow-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Power Amplifiers</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/amplifiers/headphones/head-1-200.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/amplifiers/headphones/head-1.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Headphone Amplifiers" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/amplifiers/headphones/head-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Headphone Amplifiers</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/amplifiers/tube/tube-1-200.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/amplifiers/tube/tube-1.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Tube Amplifiers" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/amplifiers/tube/tube-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Tube Amplifiers</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/amplifiers/d/d-1-200.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/amplifiers/d/d-1.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Class D Amplifiers" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/amplifiers/d/d-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Class D Amplifiers</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/amplifiers/accessories/accessories-1-200.webp" type="image/webp">
+										<source media="(max-width: 400px)" srcset="./assets/img/megamenu/amplifiers/accessories/accessories-1-400.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/amplifiers/accessories/accessories-1.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Amplifier Accessories" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/amplifiers/accessories/accessories-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Accessories</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/dacs/dac-1-200.webp" type="image/webp">
+										<source media="(max-width: 400px)" srcset="./assets/img/megamenu/dacs/dac-1-400.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/dacs/dac-1.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Desktop DACs" height="64" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/dacs/dac-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Desktop DACs</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/dacs/dac-2-200.webp" type="image/webp">
+										<source media="(max-width: 400px)" srcset="./assets/img/megamenu/dacs/dac-2-400.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/dacs/dac-2.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Portable DACs" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/dacs/dac-2.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Portable DACs</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/dacs/dac-3-200.webp" type="image/webp">
+										<source media="(max-width: 400px)" srcset="./assets/img/megamenu/dacs/dac-3-400.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/dacs/dac-3.webp" type="image/webp">
+										<img class="megamenu__icon" alt="USB DAC Amplifiers" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/dacs/dac-3.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">USB DAC Amplifiers</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/dacs/dac-4-200.webp" type="image/webp">
+										<source media="(max-width: 400px)" srcset="./assets/img/megamenu/dacs/dac-4-400.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/dacs/dac-4.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Streaming DACs" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/dacs/dac-4.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Streaming DACs</h3>
+								<div class="megamenu__quantity">13</div>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/dacs/dac-5-200.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/dacs/dac-5.webp" type="image/webp">
+										<img class="megamenu__icon" alt="MQA Capable DACs" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/dacs/dac-5.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">MQA Capable DACs</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/dacs/dac-6-200.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/dacs/dac-6.webp" type="image/webp">
+										<img class="megamenu__icon" alt="DAC Accessories" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/dacs/dac-6.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Accessories</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/soundbars/sound-1-200.webp" type="image/webp">
+										<source media="(max-width: 400px)" srcset="./assets/img/megamenu/soundbars/sound-1-400.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/soundbars/sound-1.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Entry-Level Soundbars" height="64" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/soundbars/sound-1.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Entry-Level Soundbars</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/soundbars/sound-2-200.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/soundbars/sound-2.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Mid-Range Soundbars" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/soundbars/sound-2.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Mid-Range Soundbars</h3>
+							</a>
+						</li>
+						<li class="megamenu__block">
+							<a href="#" class="megamenu__link">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/soundbars/sound-3-200.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/soundbars/sound-3.webp" type="image/webp">
+										<img class="megamenu__icon" alt="Premium Soundbars" height="72" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/soundbars/sound-3.webp">
+									</picture>
+								</picture>
+								<h3 class="megamenu__subtitle">Premium Soundbars</h3>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="collections">
+			<nav data-simplebar="" class="collections__nav" title="collections">
+				<ul class="collections__list">
+					<li class="collections__item">
+						<button class="collections__btn collections__btn--active --icon-angle-down">Microphones for vocal recording</button>
+					</li>
+					<li class="collections__item">
+						<button class="collections__btn --icon-angle-down">For studio use</button>
+					</li>
+					<li class="collections__item">
+						<button class="collections__btn --icon-angle-down">Affordable vinyl turntables</button>
+					</li>
+					<li class="collections__item">
+						<button class="collections__btn --icon-angle-down">Best headphones under 100$</button>
+					</li>
+					<li class="collections__item">
+						<button class="collections__btn --icon-angle-down">Vintage sound</button>
+					</li>
+					<li class="collections__item">
+						<button class="collections__btn --icon-angle-down">Beginner's kit</button>
+					</li>
+					<li class="collections__item">
+						<button class="collections__btn --icon-angle-down">External DACs</button>
+					</li>
+				</ul>
+			</nav>
+			<div class="collections__content">
+				<div class="collections__content-header">
+					<button class="collections__back --icon-angle-down" aria-label="Back to categories">
+						<span class="collections__content-title"></span>
+					</button>
+				</div>
+				<div data-simplebar="" class="collections__wrapper">
+					<ul class="collections__items">
+						<li class="collections__block">
+							<a href="/catalog.html" class="collections__link" data-collections="vocal" data-subcategory="condenser">
+								<picture>
+									<picture>
+										<source srcset="./assets/img/megamenu/mic-2.webp" type="image/webp">
+										<img class="collections__icon" alt="Condenser Microphones" height="120" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/mic-2.webp">
+									</picture>
+								</picture>
+								<h3 class="collections__subtitle">Condenser Microphones</h3>
+							</a>
+						</li>
+						<li class="collections__block">
+							<a href="catalog-main.html" class="collections__link" data-collections="vocal" data-subcategory="dynamic">
+								<picture>
+									<picture>
+										<source srcset="./assets/img/megamenu/mic-1.webp" type="image/webp">
+										<img class="collections__icon" alt="Dynamic Microphones" height="120" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/mic-1.webp">
+									</picture>
+								</picture>
+								<h3 class="collections__subtitle">Dynamic Microphones</h3>
+							</a>
+						</li>
+						<li class="collections__block">
+							<a href="/catalog.html" class="collections__link">
+								<picture>
+									<picture>
+										<source srcset="./assets/img/megamenu/mic-3.webp" type="image/webp">
+										<img class="collections__icon" alt="All Vocal Mics" height="120" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/mic-3.webp">
+									</picture>
+								</picture>
+								<h3 class="collections__subtitle">All Vocal Mics</h3>
+							</a>
+						</li>
+						<li class="collections__block" style="display: none">
+							<a href="catalog-main.html" class="collections__link" data-category="microphones" data-collections="studio">
+								<picture>
+									<picture>
+										<source srcset="./assets/img/collections/collections-3.webp" type="image/webp">
+										<img class="collections__icon" alt="Studio Microphones" height="120" loading="lazy" aria-hidden="true" src="./assets/img/collections/collections-3.webp">
+									</picture>
+								</picture>
+								<h3 class="collections__subtitle">Studio Microphones</h3>
+							</a>
+						</li>
+						<li class="collections__block" style="display: none">
+							<a href="catalog-main.html" class="collections__link" data-category="turntables" data-collections="premium-turntables">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/collections/turn-200.webp" type="image/webp">
+										<source media="(max-width: 400px)" srcset="./assets/img/collections/turn-400.webp" type="image/webp">
+										<source media="(max-width: 600px)" srcset="./assets/img/collections/turn-600.webp" type="image/webp">
+										<source media="(max-width: 800px)" srcset="./assets/img/collections/turn-800.webp" type="image/webp">
+										<source media="(max-width: 1000px)" srcset="./assets/img/collections/turn-1000.webp" type="image/webp">
+										<source srcset="./assets/img/collections/turn.webp" type="image/webp">
+										<img class="collections__icon" alt="Studio Turntables" height="120" loading="lazy" aria-hidden="true" src="./assets/img/collections/turn.webp">
+									</picture>
+								</picture>
+								<h3 class="collections__subtitle">Studio Turntables</h3>
+							</a>
+						</li>
+						<li class="collections__block" style="display: none">
+							<a href="catalog-main.html" class="collections__link" data-collection="studio">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/collections/collections-2-200.webp" type="image/webp">
+										<source srcset="./assets/img/collections/collections-2.webp" type="image/webp">
+										<img class="collections__icon" alt="All Studio Gear" height="120" loading="lazy" aria-hidden="true" src="./assets/img/collections/collections-2.webp">
+									</picture>
+								</picture>
+								<h3 class="collections__subtitle">All Studio Gear</h3>
+							</a>
+						</li>
+						<li class="collections__block" style="display: none">
+							<a href="catalog-main.html" class="collections__link" data-category="turntables" data-collections="affordable-turntables">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/collections/turn-200.webp" type="image/webp">
+										<source media="(max-width: 400px)" srcset="./assets/img/collections/turn-400.webp" type="image/webp">
+										<source media="(max-width: 600px)" srcset="./assets/img/collections/turn-600.webp" type="image/webp">
+										<source media="(max-width: 800px)" srcset="./assets/img/collections/turn-800.webp" type="image/webp">
+										<source media="(max-width: 1000px)" srcset="./assets/img/collections/turn-1000.webp" type="image/webp">
+										<source srcset="./assets/img/collections/turn.webp" type="image/webp">
+										<img class="collections__icon" alt="Affordable Turntables" height="120" loading="lazy" aria-hidden="true" src="./assets/img/collections/turn.webp">
+									</picture>
+								</picture>
+								<h3 class="collections__subtitle">Affordable Turntables</h3>
+							</a>
+						</li>
+						<li class="collections__block" style="display: none">
+							<a href="catalog-main.html" class="collections__link" data-collection="audiophile" data-subcategory="cartridges">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/cartridges/cartridge-1-200.webp" type="image/webp">
+										<source media="(max-width: 400px)" srcset="./assets/img/megamenu/cartridges/cartridge-1-400.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/cartridges/cartridge-1.webp" type="image/webp">
+										<img class="collections__icon" alt="Audiophile Cartridges" height="120" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/cartridges/cartridge-1.webp">
+									</picture>
+								</picture>
+								<h3 class="collections__subtitle">Audiophile Cartridges</h3>
+							</a>
+						</li>
+						<li class="collections__block" style="display: none">
+							<a href="catalog-main.html" class="collections__link" data-collection="audiophile" data-subcategory="preamps">
+								<picture>
+									<img class="collections__icon" src="./assets/img/megamenu/pre%20amp/preamp-1.png" alt="Phono Preamps" height="120" loading="lazy" aria-hidden="true">
+								</picture>
+								<h3 class="collections__subtitle">Phono Preamps</h3>
+							</a>
+						</li>
+						<li class="collections__block" style="display: none">
+							<a href="catalog-main.html" class="collections__link" data-collection="headphones" data-subcategory="studio">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/headphones/over-ear/headphone-1-200.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/headphones/over-ear/headphone-1.webp" type="image/webp">
+										<img class="collections__icon" alt="Studio Headphones" height="120" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/headphones/over-ear/headphone-1.webp">
+									</picture>
+								</picture>
+								<h3 class="collections__subtitle">Studio Headphones</h3>
+							</a>
+						</li>
+						<li class="collections__block" style="display: none">
+							<a href="catalog-main.html" class="collections__link" data-collection="headphones">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/headphones/in-ear/headphone-1-200.webp" type="image/webp">
+										<source media="(max-width: 400px)" srcset="./assets/img/megamenu/headphones/in-ear/headphone-1-400.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/headphones/in-ear/headphone-1.webp" type="image/webp">
+										<img class="collections__icon" alt="All Headphones" height="120" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/headphones/in-ear/headphone-1.webp">
+									</picture>
+								</picture>
+								<h3 class="collections__subtitle">All Headphones</h3>
+							</a>
+						</li>
+						<li class="collections__block" style="display: none">
+							<a href="catalog-main.html" class="collections__link" data-collection="studio-headphones">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/headphones/dj/dj-1-200.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/headphones/dj/dj-1.webp" type="image/webp">
+										<img class="collections__icon" alt="Professional Headphones" height="120" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/headphones/dj/dj-1.webp">
+									</picture>
+								</picture>
+								<h3 class="collections__subtitle">Professional Headphones</h3>
+							</a>
+						</li>
+						<li class="collections__block" style="display: none">
+							<a href="catalog-main.html" class="collections__link" data-collection="audiophile" data-category="turntables">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/products/turntable/pro-ject/pro-3-200.webp" type="image/webp">
+										<source media="(max-width: 400px)" srcset="./assets/img/products/turntable/pro-ject/pro-3-400.webp" type="image/webp">
+										<source media="(max-width: 600px)" srcset="./assets/img/products/turntable/pro-ject/pro-3-600.webp" type="image/webp">
+										<source srcset="./assets/img/products/turntable/pro-ject/pro-3.webp" type="image/webp">
+										<img class="collections__icon" alt="Audiophile Turntables" height="120" loading="lazy" aria-hidden="true" src="./assets/img/products/turntable/pro-ject/pro-3.webp">
+									</picture>
+								</picture>
+								<h3 class="collections__subtitle">Audiophile Turntables</h3>
+							</a>
+						</li>
+						<li class="collections__block" style="display: none">
+							<a href="catalog-main.html" class="collections__link" data-collection="audiophile" data-subcategory="cartridges">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/amplifiers/tube/tube-1-200.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/amplifiers/tube/tube-1.webp" type="image/webp">
+										<img class="collections__icon" alt="Audiophile Cartridges" height="120" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/amplifiers/tube/tube-1.webp">
+									</picture>
+								</picture>
+								<h3 class="collections__subtitle">Audiophile Cartridges</h3>
+							</a>
+						</li>
+						<li class="collections__block" style="display: none">
+							<a href="catalog-main.html" class="collections__link" data-collection="audiophile" data-subcategory="preamps">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/collections/vintage-sounds-200.webp" type="image/webp">
+										<source media="(max-width: 400px)" srcset="./assets/img/collections/vintage-sounds-400.webp" type="image/webp">
+										<source srcset="./assets/img/collections/vintage-sounds.webp" type="image/webp">
+										<img class="collections__icon" alt="Audiophile Preamps" height="120" loading="lazy" aria-hidden="true" src="./assets/img/collections/vintage-sounds.webp">
+									</picture>
+								</picture>
+								<h3 class="collections__subtitle">Audiophile Preamps</h3>
+							</a>
+						</li>
+						<li class="collections__block" style="display: none">
+							<a href="catalog-main.html" class="collections__link" data-collection="for-beginners">
+								<picture>
+									<picture>
+										<source srcset="./assets/img/collections/starter-headphones.webp" type="image/webp">
+										<img class="collections__icon" alt="Beginner Turntables" height="120" loading="lazy" aria-hidden="true" src="./assets/img/collections/starter-headphones.webp">
+									</picture>
+								</picture>
+								<h3 class="collections__subtitle">Beginner Turntables</h3>
+							</a>
+						</li>
+						<li class="collections__block" style="display: none">
+							<a href="catalog-main.html" class="collections__link" data-collection="budget" data-category="turntables">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/products/turntable/victrola/victrola-2-200.webp" type="image/webp">
+										<source srcset="./assets/img/products/turntable/victrola/victrola-2.webp" type="image/webp">
+										<img class="collections__icon" alt="Budget Turntables" height="120" loading="lazy" aria-hidden="true" src="./assets/img/products/turntable/victrola/victrola-2.webp">
+									</picture>
+								</picture>
+								<h3 class="collections__subtitle">Budget Turntables</h3>
+							</a>
+						</li>
+						<li class="collections__block" style="display: none">
+							<a href="catalog-main.html" class="collections__link" data-collection="budget" data-subcategory="dynamic">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/collections/starter-speakers-200.webp" type="image/webp">
+										<source media="(max-width: 400px)" srcset="./assets/img/collections/starter-speakers-400.webp" type="image/webp">
+										<source media="(max-width: 600px)" srcset="./assets/img/collections/starter-speakers-600.webp" type="image/webp">
+										<source srcset="./assets/img/collections/starter-speakers.webp" type="image/webp">
+										<img class="collections__icon" alt="Budget Microphones" height="120" loading="lazy" aria-hidden="true" src="./assets/img/collections/starter-speakers.webp">
+									</picture>
+								</picture>
+								<h3 class="collections__subtitle">Budget Microphones</h3>
+							</a>
+						</li>
+						<li class="collections__block" style="display: none">
+							<a href="catalog-main.html" class="collections__link" data-collection="dac">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/dacs/dac-2-200.webp" type="image/webp">
+										<source media="(max-width: 400px)" srcset="./assets/img/megamenu/dacs/dac-2-400.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/dacs/dac-2.webp" type="image/webp">
+										<img class="collections__icon" alt="All DACs" height="120" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/dacs/dac-2.webp">
+									</picture>
+								</picture>
+								<h3 class="collections__subtitle">All DACs</h3>
+							</a>
+						</li>
+						<li class="collections__block" style="display: none">
+							<a href="catalog-main.html" class="collections__link" data-collection="streaming-amplifiers">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/dacs/dac-1-200.webp" type="image/webp">
+										<source media="(max-width: 400px)" srcset="./assets/img/megamenu/dacs/dac-1-400.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/dacs/dac-1.webp" type="image/webp">
+										<img class="collections__icon" alt="Streaming Amplifiers" height="120" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/dacs/dac-1.webp">
+									</picture>
+								</picture>
+								<h3 class="collections__subtitle">Streaming Amplifiers</h3>
+							</a>
+						</li>
+						<li class="collections__block" style="display: none">
+							<a href="catalog-main.html" class="collections__link" data-collection="dac">
+								<picture>
+									<picture>
+										<source media="(max-width: 200px)" srcset="./assets/img/megamenu/dacs/dac-3-200.webp" type="image/webp">
+										<source media="(max-width: 400px)" srcset="./assets/img/megamenu/dacs/dac-3-400.webp" type="image/webp">
+										<source srcset="./assets/img/megamenu/dacs/dac-3.webp" type="image/webp">
+										<img class="collections__icon" alt="DAC Amplifiers" height="120" loading="lazy" aria-hidden="true" src="./assets/img/megamenu/dacs/dac-3.webp">
+									</picture>
+								</picture>
+								<h3 class="collections__subtitle">DAC Amplifiers</h3>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
